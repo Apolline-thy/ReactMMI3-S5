@@ -1,6 +1,6 @@
 import Button from "./Button";
 function User({ name, avatar, work, connected }) {
-  const statusColor = connected ? "bg-green-500" : "bg-red-500";
+  const statusColor = connected ? "bg-green-400" : "bg-red-500";
   return (
     <section className="nb-2 nl-4 shadow-nd flex items-center space-x-4 rounded-lg border-2 border-gray-300 bg-gray-100 p-4">
       <div>
