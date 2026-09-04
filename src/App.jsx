@@ -1,26 +1,29 @@
+// App.jsx
+// import User from "./components/User";
 
-const img = "border-radius"
+// function App() {
+//   return (
+//     <div>
+//       <User
+//         name="John Do"
+//         avatar="https://i.imgur.com/7vQD0fPs.jpg"
+//         age={30}
+//         favoriteFood="Fruits"
+//       />
+//     </div>
+//   );
+// }
 
-function User({ work, name, img }) {
-  return (
-    <div className="white">
-      <h2>{name}</h2>
-      <p>{work}</p>
-      <img  src= {img} alt="Ada"/>
-      <button></button>
-    </div>)
-}
-
+import Button from "./components/Button"
+import User from "./components/User"
 
 function App() {
   return (
-    <>
-      <User name="Dae Houston" work={"Software Engineer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
-      <User name="Madge Merphy" work={"Product Designer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
-      <User name="Margaret Garner" work={"Product Designer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
-    </>
+    <section>
+      <User img="https://i.imgur.com/7vQD0fPs.jpg" alt="Dale" name="Dale Houston" work="Software Engineer" />
+      <Button/>
+    </section>
+
   );
 }
-
-
 export default App;
