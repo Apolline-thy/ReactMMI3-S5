@@ -1,9 +1,22 @@
+
+function User({ age, name, img }) {
+  return (
+    <div className="bg-Amber-900">
+      <h2>{name}</h2>
+      <p>Age: {age}</p>
+      <img  src= {img}/>
+    </div>)
+}
+
+
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
-    </div>
+    <>
+      <User name="Hedy Lamarr" age={101}/>
+      <User name="Ada Loveplace" age={201} />
+    </>
   );
 }
+
 
 export default App;
