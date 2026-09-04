@@ -14,16 +14,32 @@
 //   );
 // }
 
-import Button from "./components/Button"
-import User from "./components/User"
+import Button from "./components/Button";
+import User from "./components/User";
+import data from "./data/data"
+
 
 function App() {
   return (
     <section>
-      <User img="https://i.imgur.com/7vQD0fPs.jpg" alt="Dale" name="Dale Houston" work="Software Engineer" />
-      <Button/>
-    </section>
+      <h1 className="font-bold ">Room</h1>
+      <h2>5 people are around right now</h2>
 
+      <User
+        name="Dale Houston"
+        work="Software Engineer"
+        avatar="https://thispersondoesnotexist.com/random-person.jpeg"
+        alt="pk,ijk"
+      />
+
+      <User
+        name="Dale Houston"
+        work="Software Engineer"
+        avatar="https://thispersondoesnotexist.com/random-person.jpeg"
+        alt="pk,ijk"
+      />
+  
+    </section>
   );
 }
 export default App;
