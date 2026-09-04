@@ -38,6 +38,9 @@ function App() {
         avatar="https://thispersondoesnotexist.com/random-person.jpeg"
         alt="pk,ijk"
       />
+      {data.map((person) => (
+        <User connected key={person.id} name={person.name} work={person.work} avatar={person.avatar} alt={person.alt} />
+      ))}
   
     </section>
   );

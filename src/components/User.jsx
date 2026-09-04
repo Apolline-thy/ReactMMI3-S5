@@ -1,10 +1,12 @@
 import Button from "./Button";
 function User({ name, avatar, work, connected }) {
-  const statusColor = connected ? "bg-green-500";
+  const statusColor = connected ? "bg-green-500" : "bg-red-500";
   return (
     <section className="nb-2 nl-4 shadow-nd flex items-center space-x-4 rounded-lg border-2 border-gray-300 bg-gray-100 p-4">
       <div>
-        <img className="h-16 w-16 rounded-full" src={avatar} alt={name} />
+        <img className="h-16 w-16 rounded-full" src={avatar} alt={name}
+       />
+       <spam className={'absolute right-0 bottom-0 block h-3 w-3 rounded full ${statusColor}'}></spam>
       </div>
       <div>
         <h1 className="font-bold">{name}</h1>
