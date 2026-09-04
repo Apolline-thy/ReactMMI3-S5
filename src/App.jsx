@@ -15,7 +15,7 @@ function User({ work, name, img }) {
 function App() {
   return (
     <>
-      <User name="Dale Houston" work={"Software Engineer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
+      <User name="Dae Houston" work={"Software Engineer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
       <User name="Madge Merphy" work={"Product Designer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
       <User name="Margaret Garner" work={"Product Designer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
     </>
