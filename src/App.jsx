@@ -1,10 +1,13 @@
 
-function User({ age, name, img }) {
+const img = "border-radius"
+
+function User({ work, name, img }) {
   return (
-    <div className="bg-Amber-900">
+    <div className="white">
       <h2>{name}</h2>
-      <p>Age: {age}</p>
-      <img  src= {img}/>
+      <p>{work}</p>
+      <img  src= {img} alt="Ada"/>
+      <button></button>
     </div>)
 }
 
@@ -12,8 +15,9 @@ function User({ age, name, img }) {
 function App() {
   return (
     <>
-      <User name="Hedy Lamarr" age={101}/>
-      <User name="Ada Loveplace" age={201} />
+      <User name="Dale Houston" work={"Software Engineer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
+      <User name="Madge Merphy" work={"Product Designer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
+      <User name="Margaret Garner" work={"Product Designer"} img="https://i.imgur.com/yXOvdOSs.jpg"/>
     </>
   );
 }
